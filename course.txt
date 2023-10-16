@@ -1,0 +1,61 @@
+1) What is VueJs
+	A popular JavaScript Framework for building user interface.
+	The core Vue libary is focused on doing one things and doing that one thing really well which is building user interfaces
+	Vue does not focus on the other aspects of your application like routing or HTTP requests
+	Vue has rich eco system of other powerful libaries that you can integrate
+	Vuex npm package for complex state management, Vue router for routing, Vuetify for UI elements and a lot more
+	
+2) Why VueJs
+	Vue currently has 1785K GitHub starts - the third most starred GitHub repository in the world.
+	Thousands of developers around the world enjoy working with Vue.
+	You are going to find solutions to most of the problems that you face.
+	
+	1. Vue is approachable
+		Familiarity with HTML, CSS and JavaScript
+		Add a script tag with a reference to vueJs and start building Vue applications
+		Vue Devtools which gives insight into your apps
+		Vue CLI with which you can quickly scaffold and manage projects 
+		Vue also has a component based architecture
+		Vue is declarative
+		Vue will make it painless for you to create complex user interface by abstracting away the difficult parts.
+	2. Vue is versatile
+		Create powerful single page applications from scratch using build tools like webpack.
+		Incorporate Vue into your existing legacy projects and make progressive enhancement.
+	3. Vue is performant
+		Vue measures just 20KB minified and gzipped at runtime.
+		Better performance because of virtual DOM.
+		
+Vue is a framework built by taking the good parts from a lot of other libraries and frameworks and then improving where necessary
+Vue is going to a great addition to your skillset.
+
+Prerequisites
+HTML + CSS and JavaScript fundamentals
+ES6 + features
+A knowledge of modern JavaScript
+
+Four ways to add Vue
+	1. CDN package
+		<script src="https://unpkg.com/vue@next"></script>
+	2. npm 
+		npm install vue@next
+		-> Preferred approach over CDN when building large scale applications with Vue
+	3. Vue CLI
+		Vue provides an official CLI for quickly scaffolding single page applications
+			npm install -g @vue/cli 
+			vue create <project-name>
+	4. Vite 
+		An opinionated web dev build tool that serves your code via native ES Module imports
+		Your code is erved at a lightning fast speed and you get nearly instant hot module replacement
+			npm init vite-app <project-name>
+
+Approach chosen for this series
+	 CDN     -> 	incorporate Vue into a really old legacy code base or quickly prototype
+	 npm     -> 	is the recommended approach for building large scale applications with Vue
+best	Vue CLI ->	Takes only a few minutes to get up and running with hot-reload, lint-on-save, and production-ready builds.
+	 Vite  	->	Its currently in the beta version.
+
+Setting up with Vue CLI
+	1. yarn global add @vue/cli 
+	2. vue create hello-world
+	3. cd hello-world
+	4. yarn serve
