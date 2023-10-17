@@ -16,6 +16,8 @@
   <h2 v-bind:class="{ promoted: isPromoted, new: !isSoldOut, 'sold-out': isSoldOut }" >
     Object conditional movie
   </h2>
+
+  <h2 v-bind:style="{color: highlightColor}">Inline Style</h2>
 </template>
 
 <script>
@@ -34,10 +36,11 @@
         isDisabled: false,
         status: 'success',
         isPromoted: true,
-        isSoldOut: true
+        isSoldOut: true,
+        highlightColor: 'orange'
       };
     }
-
+  //Font Size
   }
 </script>
 
