@@ -59,3 +59,25 @@ Setting up with Vue CLI
 	2. vue create hello-world
 	3. cd hello-world
 	4. yarn serve
+	
+.Vue file
+	A *.vue file is a custom file format that uses HTML-like syntax to describe a portion of the UI
+	Each *.vue file consists of three types of top-level language blocks
+		<template></template>
+		<script></script>
+		<style></style>
+	The template block is like the HTML of your UI
+	The script block is where the logic and functionality of your app can be maintained
+	The CSS block is where you specify the styles related to the mark up in the template block
+	
+Components
+	A .vue file is called a single file component (SFC)
+	As a beginner, there is a lot to learn without having to worry about the component architecture
+	
+Content for the first half of the series
+	Template syntax
+	The template block is responsible for the markup and the script block is responsible for the logic of the UI
+	Working with .Vue files is wiring up the logic to the markip
+	That is, connecting data present in the script block to the HTML present in the template block
+	Declarative programming approach
+	Let Vue know you want to bind your data to the HTML and Vue will take care of the rest
