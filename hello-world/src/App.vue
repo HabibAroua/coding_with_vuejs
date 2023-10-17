@@ -1,6 +1,8 @@
 <template>
   <div>{{ greet }} {{ name }}</div>
-  <div v-text="channel"></div>
+  <div>{{ channel }}</div>
+  <div v-html="channel"></div>
+  <div v-html="hack"></div>
 </template>
 
 <script>
@@ -13,7 +15,8 @@
       return {
         greet: "Hello",
         name: "Habib Aroua",
-        channel: "Codeevolution"
+        channel: "<b>Codeevolution</b>",
+        hack: `<a href="#" onclick="alert('You have been hacked')">Win a prize!</a>`,
       };
     }
 
