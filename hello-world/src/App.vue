@@ -1,7 +1,7 @@
 <template>
   <div>{{ greet }} {{ name }}</div>
   <div>{{ channel }}</div>
-  <div v-html="channel"></div>text
+  <div v-html="channel"></div>
   <div v-html="hack"></div>
   <h2 v-bind:id="headingId">Heading</h2>
   <button v-bind:disabled="isDisabled">Bind</button>
@@ -17,7 +17,19 @@
     Object conditional movie
   </h2>
 
-  <h2 v-bind:style="{color: highlightColor}">Inline Style</h2>
+  <h2 v-bind:style="{ color: highlightColor,fontSize : headerSize + 'px', padding: '20px'}">
+    Inline Style
+  </h2>
+
+  <h2 v-bind:style="headerStyleObject">Inline Style</h2>
+
+  <div v-bind:style="[baseStyleObject, successStyleObject]">
+    Success Style
+  </div>
+
+  <div v-bind:style="[baseStyleObject, dangerStyleObject]">
+    Success Style
+  </div>
 </template>
 
 <script>
@@ -37,10 +49,35 @@
         status: 'success',
         isPromoted: true,
         isSoldOut: true,
-        highlightColor: 'orange'
+        highlightColor: 'orange',
+        headerSize: 50,
+        headerStyleObject:
+        {
+          color: 'orange',
+          fontSize: '50px',
+          padding: '20px'
+        },
+        baseStyleObject:
+        {
+          fontSize: '50px',
+          padding: '10px'
+        },
+        successStyleObject:
+        {
+          color: 'green',
+          backgroundColor: 'lightgreen',
+          border: '1px solid green',
+          padding: '20px'
+        },
+        dangerStyleObject:
+        {
+          color: 'darkred',
+          backgroundColor: 'red',
+          border: '1px solid red',
+          padding: '20px'
+        }
       };
     }
-  //Font Size
   }
 </script>
 
